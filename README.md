@@ -23,6 +23,21 @@ bundle exec jekyll serve
 # → http://localhost:4000
 ```
 
+## 로컬 관리자 화면 사용
+
+공개 사이트의 `/admin`은 보안을 위해 비활성화되어 있습니다.
+
+로컬에서만 관리자 화면을 사용합니다.
+
+```bash
+bash scripts/start-local-admin.sh
+```
+
+- 블로그: http://localhost:4000
+- 관리자: http://localhost:4000/admin
+
+관리자 화면에서는 카테고리별 글 작성, 수정, 태그 입력을 할 수 있습니다.
+
 ## 기술 스택
 
 - [Jekyll](https://jekyllrb.com)
