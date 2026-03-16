@@ -1,8 +1,14 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Yewon's Tech Blog
+description: Cloud, DevOps, Infra, AI & 머신러닝 기술 블로그
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://yewon4540.github.io
 
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+# 네비게이션 정렬 (알파벳 순 비활성화, nav_order 기준)
+nav_sort: order
+
+# 검색 활성화
+search_enabled: true
+
+# 코드 복사 버튼
+enable_copy_code_button: true
