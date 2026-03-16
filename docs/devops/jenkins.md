@@ -4,6 +4,7 @@ layout: default
 parent: Devops
 nav_order: 2
 permalink: /docs/devops/jenkins
+has_children: true
 ---
 
 # Jenkins

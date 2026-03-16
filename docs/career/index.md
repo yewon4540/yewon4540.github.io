@@ -3,6 +3,7 @@ title: 커리어&포트폴리오
 layout: default
 nav_order: 8
 permalink: /docs/career
+has_children: true
 ---
 
 # 커리어&포트폴리오

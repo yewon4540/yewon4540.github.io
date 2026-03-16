@@ -4,6 +4,7 @@ layout: default
 parent: 모니터링
 nav_order: 1
 permalink: /docs/monitoring/fluent
+has_children: true
 ---
 
 # Fluent

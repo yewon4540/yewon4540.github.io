@@ -4,6 +4,7 @@ layout: default
 parent: 인프라
 nav_order: 3
 permalink: /docs/infra/architecture
+has_children: true
 ---
 
 # 아키텍처

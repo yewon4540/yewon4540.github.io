@@ -4,6 +4,7 @@ layout: default
 parent: QA
 nav_order: 1
 permalink: /docs/qa/performance-test
+has_children: true
 ---
 
 # 성능테스트

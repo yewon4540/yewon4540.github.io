@@ -4,6 +4,7 @@ layout: default
 parent: Kubernetes
 nav_order: 1
 permalink: /docs/kubernetes/k3s
+has_children: true
 ---
 
 # k3s

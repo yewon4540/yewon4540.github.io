@@ -4,6 +4,7 @@ layout: default
 parent: Devops
 nav_order: 1
 permalink: /docs/devops/nexus
+has_children: true
 ---
 
 # Nexus

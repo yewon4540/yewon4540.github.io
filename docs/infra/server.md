@@ -4,6 +4,7 @@ layout: default
 parent: 인프라
 nav_order: 4
 permalink: /docs/infra/server
+has_children: true
 ---
 
 # Server
