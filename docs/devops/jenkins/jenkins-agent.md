@@ -1,7 +1,7 @@
 ---
 title: Jenkins Pipeline Agent 지정하기 (+빌드 시 Agent 동적으로 할당하기)
 layout: default
-parent: jenkins
+parent: Jenkins
 grand_parent: Devops
 nav_order: 1
 ---

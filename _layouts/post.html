@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% if page.description %}
+<p class="fs-5 text-grey-dk-100">{{ page.description }}</p>
+{% endif %}
+
+{% if page.tags and page.tags.size > 0 %}
+<div class="mb-4">
+  {% for tag in page.tags %}
+  <span class="label label-blue mr-2">{{ tag }}</span>
+  {% endfor %}
+</div>
+{% endif %}
+
+{{ content }}

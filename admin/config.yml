@@ -1,0 +1,224 @@
+backend:
+  name: github
+  repo: yewon4540/yewon4540.github.io
+  branch: main
+
+local_backend: true
+
+site_url: https://blog.yewon.cloud
+logo_url: https://blog.yewon.cloud/favicon.ico
+
+media_folder: uploads
+public_folder: /uploads
+
+editor:
+  preview: false
+
+collections:
+  - name: infra_cloud
+    label: 인프라 / Cloud
+    label_singular: Cloud 글
+    folder: docs/infra/cloud
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { label: 제목, name: title, widget: string }
+      - { label: 레이아웃, name: layout, widget: hidden, default: post }
+      - { label: 상위 카테고리, name: parent, widget: hidden, default: Cloud }
+      - { label: 상위 상위 카테고리, name: grand_parent, widget: hidden, default: 인프라 }
+      - { label: 정렬 순서, name: nav_order, widget: number, default: 1, value_type: int, min: 1 }
+      - { label: 요약, name: description, widget: text, required: false }
+      - { label: 태그, name: tags, widget: list, required: false }
+      - label: 본문
+        name: body
+        widget: markdown
+        default: |
+          # 새 글 제목
+
+          글 요약을 작성하세요.
+
+          ---
+
+          ## 목차
+
+          1. [개요](#1-개요)
+          2. [본문](#2-본문)
+          3. [마무리](#3-마무리)
+
+          ---
+
+          ## 1) 개요
+
+          내용을 작성하세요.
+
+          ## 2) 본문
+
+          내용을 작성하세요.
+
+          ## 3) 마무리
+
+          내용을 작성하세요.
+
+  - name: infra_docker
+    label: 인프라 / Docker
+    label_singular: Docker 글
+    folder: docs/infra/docker
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { label: 제목, name: title, widget: string }
+      - { label: 레이아웃, name: layout, widget: hidden, default: post }
+      - { label: 상위 카테고리, name: parent, widget: hidden, default: Docker }
+      - { label: 상위 상위 카테고리, name: grand_parent, widget: hidden, default: 인프라 }
+      - { label: 정렬 순서, name: nav_order, widget: number, default: 1, value_type: int, min: 1 }
+      - { label: 요약, name: description, widget: text, required: false }
+      - { label: 태그, name: tags, widget: list, required: false }
+      - { label: 본문, name: body, widget: markdown }
+
+  - name: infra_architecture
+    label: 인프라 / 아키텍처
+    label_singular: 아키텍처 글
+    folder: docs/infra/architecture
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { label: 제목, name: title, widget: string }
+      - { label: 레이아웃, name: layout, widget: hidden, default: post }
+      - { label: 상위 카테고리, name: parent, widget: hidden, default: 아키텍처 }
+      - { label: 상위 상위 카테고리, name: grand_parent, widget: hidden, default: 인프라 }
+      - { label: 정렬 순서, name: nav_order, widget: number, default: 1, value_type: int, min: 1 }
+      - { label: 요약, name: description, widget: text, required: false }
+      - { label: 태그, name: tags, widget: list, required: false }
+      - { label: 본문, name: body, widget: markdown }
+
+  - name: infra_server
+    label: 인프라 / Server
+    label_singular: Server 글
+    folder: docs/infra/server
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { label: 제목, name: title, widget: string }
+      - { label: 레이아웃, name: layout, widget: hidden, default: post }
+      - { label: 상위 카테고리, name: parent, widget: hidden, default: Server }
+      - { label: 상위 상위 카테고리, name: grand_parent, widget: hidden, default: 인프라 }
+      - { label: 정렬 순서, name: nav_order, widget: number, default: 1, value_type: int, min: 1 }
+      - { label: 요약, name: description, widget: text, required: false }
+      - { label: 태그, name: tags, widget: list, required: false }
+      - { label: 본문, name: body, widget: markdown }
+
+  - name: devops_nexus
+    label: Devops / Nexus
+    label_singular: Nexus 글
+    folder: docs/devops/nexus
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { label: 제목, name: title, widget: string }
+      - { label: 레이아웃, name: layout, widget: hidden, default: post }
+      - { label: 상위 카테고리, name: parent, widget: hidden, default: Nexus }
+      - { label: 상위 상위 카테고리, name: grand_parent, widget: hidden, default: Devops }
+      - { label: 정렬 순서, name: nav_order, widget: number, default: 1, value_type: int, min: 1 }
+      - { label: 요약, name: description, widget: text, required: false }
+      - { label: 태그, name: tags, widget: list, required: false }
+      - { label: 본문, name: body, widget: markdown }
+
+  - name: devops_jenkins
+    label: Devops / Jenkins
+    label_singular: Jenkins 글
+    folder: docs/devops/jenkins
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { label: 제목, name: title, widget: string }
+      - { label: 레이아웃, name: layout, widget: hidden, default: post }
+      - { label: 상위 카테고리, name: parent, widget: hidden, default: Jenkins }
+      - { label: 상위 상위 카테고리, name: grand_parent, widget: hidden, default: Devops }
+      - { label: 정렬 순서, name: nav_order, widget: number, default: 1, value_type: int, min: 1 }
+      - { label: 요약, name: description, widget: text, required: false }
+      - { label: 태그, name: tags, widget: list, required: false }
+      - { label: 본문, name: body, widget: markdown }
+
+  - name: kubernetes_k3s
+    label: Kubernetes / k3s
+    label_singular: k3s 글
+    folder: docs/kubernetes/k3s
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { label: 제목, name: title, widget: string }
+      - { label: 레이아웃, name: layout, widget: hidden, default: post }
+      - { label: 상위 카테고리, name: parent, widget: hidden, default: k3s }
+      - { label: 상위 상위 카테고리, name: grand_parent, widget: hidden, default: Kubernetes }
+      - { label: 정렬 순서, name: nav_order, widget: number, default: 1, value_type: int, min: 1 }
+      - { label: 요약, name: description, widget: text, required: false }
+      - { label: 태그, name: tags, widget: list, required: false }
+      - { label: 본문, name: body, widget: markdown }
+
+  - name: monitoring_fluent
+    label: 모니터링 / Fluent
+    label_singular: Fluent 글
+    folder: docs/monitoring/fluent
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { label: 제목, name: title, widget: string }
+      - { label: 레이아웃, name: layout, widget: hidden, default: post }
+      - { label: 상위 카테고리, name: parent, widget: hidden, default: Fluent }
+      - { label: 상위 상위 카테고리, name: grand_parent, widget: hidden, default: 모니터링 }
+      - { label: 정렬 순서, name: nav_order, widget: number, default: 1, value_type: int, min: 1 }
+      - { label: 요약, name: description, widget: text, required: false }
+      - { label: 태그, name: tags, widget: list, required: false }
+      - { label: 본문, name: body, widget: markdown }
+
+  - name: qa_performance_test
+    label: QA / 성능테스트
+    label_singular: 성능테스트 글
+    folder: docs/qa/performance-test
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { label: 제목, name: title, widget: string }
+      - { label: 레이아웃, name: layout, widget: hidden, default: post }
+      - { label: 상위 카테고리, name: parent, widget: hidden, default: 성능테스트 }
+      - { label: 상위 상위 카테고리, name: grand_parent, widget: hidden, default: QA }
+      - { label: 정렬 순서, name: nav_order, widget: number, default: 1, value_type: int, min: 1 }
+      - { label: 요약, name: description, widget: text, required: false }
+      - { label: 태그, name: tags, widget: list, required: false }
+      - { label: 본문, name: body, widget: markdown }
