@@ -6,6 +6,11 @@ layout: default
 <p class="fs-5 text-grey-dk-100">{{ page.description }}</p>
 {% endif %}
 
+{% assign written_date = page.written_at | default: page.date %}
+{% if written_date %}
+<p class="text-grey-dk-000 fs-3 mb-3">작성일: {{ written_date | date: "%Y-%m-%d" }}</p>
+{% endif %}
+
 {% if page.tags and page.tags.size > 0 %}
 <div class="mb-4">
   {% for tag in page.tags %}

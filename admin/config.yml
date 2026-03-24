@@ -31,6 +31,7 @@ collections:
       - { label: 상위 카테고리, name: parent, widget: hidden, default: Cloud }
       - { label: 상위 상위 카테고리, name: grand_parent, widget: hidden, default: 인프라 }
       - { label: 정렬 순서, name: nav_order, widget: number, default: 1, value_type: int, min: 1 }
+      - { label: 작성일, name: written_at, widget: datetime, default: "{{now}}", date_format: "YYYY-MM-DD", time_format: false }
       - { label: 요약, name: description, widget: text, required: false }
       - { label: 태그, name: tags, widget: list, required: false }
       - label: 본문
@@ -79,6 +80,7 @@ collections:
       - { label: 상위 카테고리, name: parent, widget: hidden, default: Docker }
       - { label: 상위 상위 카테고리, name: grand_parent, widget: hidden, default: 인프라 }
       - { label: 정렬 순서, name: nav_order, widget: number, default: 1, value_type: int, min: 1 }
+      - { label: 작성일, name: written_at, widget: datetime, default: "{{now}}", date_format: "YYYY-MM-DD", time_format: false }
       - { label: 요약, name: description, widget: text, required: false }
       - { label: 태그, name: tags, widget: list, required: false }
       - { label: 본문, name: body, widget: markdown }
@@ -99,6 +101,7 @@ collections:
       - { label: 상위 카테고리, name: parent, widget: hidden, default: 아키텍처 }
       - { label: 상위 상위 카테고리, name: grand_parent, widget: hidden, default: 인프라 }
       - { label: 정렬 순서, name: nav_order, widget: number, default: 1, value_type: int, min: 1 }
+      - { label: 작성일, name: written_at, widget: datetime, default: "{{now}}", date_format: "YYYY-MM-DD", time_format: false }
       - { label: 요약, name: description, widget: text, required: false }
       - { label: 태그, name: tags, widget: list, required: false }
       - { label: 본문, name: body, widget: markdown }
@@ -119,6 +122,7 @@ collections:
       - { label: 상위 카테고리, name: parent, widget: hidden, default: Server }
       - { label: 상위 상위 카테고리, name: grand_parent, widget: hidden, default: 인프라 }
       - { label: 정렬 순서, name: nav_order, widget: number, default: 1, value_type: int, min: 1 }
+      - { label: 작성일, name: written_at, widget: datetime, default: "{{now}}", date_format: "YYYY-MM-DD", time_format: false }
       - { label: 요약, name: description, widget: text, required: false }
       - { label: 태그, name: tags, widget: list, required: false }
       - { label: 본문, name: body, widget: markdown }
@@ -139,6 +143,7 @@ collections:
       - { label: 상위 카테고리, name: parent, widget: hidden, default: Nexus }
       - { label: 상위 상위 카테고리, name: grand_parent, widget: hidden, default: Devops }
       - { label: 정렬 순서, name: nav_order, widget: number, default: 1, value_type: int, min: 1 }
+      - { label: 작성일, name: written_at, widget: datetime, default: "{{now}}", date_format: "YYYY-MM-DD", time_format: false }
       - { label: 요약, name: description, widget: text, required: false }
       - { label: 태그, name: tags, widget: list, required: false }
       - { label: 본문, name: body, widget: markdown }
@@ -159,6 +164,7 @@ collections:
       - { label: 상위 카테고리, name: parent, widget: hidden, default: Jenkins }
       - { label: 상위 상위 카테고리, name: grand_parent, widget: hidden, default: Devops }
       - { label: 정렬 순서, name: nav_order, widget: number, default: 1, value_type: int, min: 1 }
+      - { label: 작성일, name: written_at, widget: datetime, default: "{{now}}", date_format: "YYYY-MM-DD", time_format: false }
       - { label: 요약, name: description, widget: text, required: false }
       - { label: 태그, name: tags, widget: list, required: false }
       - { label: 본문, name: body, widget: markdown }
@@ -179,6 +185,7 @@ collections:
       - { label: 상위 카테고리, name: parent, widget: hidden, default: k3s }
       - { label: 상위 상위 카테고리, name: grand_parent, widget: hidden, default: Kubernetes }
       - { label: 정렬 순서, name: nav_order, widget: number, default: 1, value_type: int, min: 1 }
+      - { label: 작성일, name: written_at, widget: datetime, default: "{{now}}", date_format: "YYYY-MM-DD", time_format: false }
       - { label: 요약, name: description, widget: text, required: false }
       - { label: 태그, name: tags, widget: list, required: false }
       - { label: 본문, name: body, widget: markdown }
@@ -199,6 +206,7 @@ collections:
       - { label: 상위 카테고리, name: parent, widget: hidden, default: Fluent }
       - { label: 상위 상위 카테고리, name: grand_parent, widget: hidden, default: 모니터링 }
       - { label: 정렬 순서, name: nav_order, widget: number, default: 1, value_type: int, min: 1 }
+      - { label: 작성일, name: written_at, widget: datetime, default: "{{now}}", date_format: "YYYY-MM-DD", time_format: false }
       - { label: 요약, name: description, widget: text, required: false }
       - { label: 태그, name: tags, widget: list, required: false }
       - { label: 본문, name: body, widget: markdown }
@@ -219,6 +227,7 @@ collections:
       - { label: 상위 카테고리, name: parent, widget: hidden, default: 성능테스트 }
       - { label: 상위 상위 카테고리, name: grand_parent, widget: hidden, default: QA }
       - { label: 정렬 순서, name: nav_order, widget: number, default: 1, value_type: int, min: 1 }
+      - { label: 작성일, name: written_at, widget: datetime, default: "{{now}}", date_format: "YYYY-MM-DD", time_format: false }
       - { label: 요약, name: description, widget: text, required: false }
       - { label: 태그, name: tags, widget: list, required: false }
       - { label: 본문, name: body, widget: markdown }
