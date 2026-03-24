@@ -1,6 +1,6 @@
 title: Yewon's Tech Blog
 description: Cloud, DevOps, Infra, AI & 머신러닝 기술 블로그
-theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 
 url: https://yewon4540.github.io
 
@@ -12,3 +12,6 @@ search_enabled: true
 
 # 코드 복사 버튼
 enable_copy_code_button: true
+
+plugins:
+  - jekyll-remote-theme
