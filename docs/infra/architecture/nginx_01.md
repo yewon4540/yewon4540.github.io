@@ -1,6 +1,6 @@
 ---
 title: Nginx 개념과 설치 (Linux)
-layout: post
+layout: default
 parent: 아키텍처
 grand_parent: 인프라
 nav_order: 1
