@@ -1,7 +1,8 @@
 ---
 title: Kubernetes Probe 설정으로 안정적인 Rollout 구성하기
 layout: default
-parent: Kubernetes
+parent: k8s
+grand_parent: Kubernetes
 nav_order: 2
 ---
 
