@@ -65,7 +65,7 @@ Kubernetes에서 Pod가 `Running` 상태라고 해서,
 
 기본적으로는 아래와 같은 health check 경로로 확인할 수 있습니다.
 
-- 예: `/api/bo/management/health`
+- 예: `/health`
 
 ### 진행 과정
 
@@ -97,9 +97,8 @@ Kubernetes에서 Pod가 `Running` 상태라고 해서,
 이 Probe가 성공해야만 해당 Pod가 Service의 엔드포인트에 포함되고,
 실제 요청을 받을 수 있게 됩니다.
 
-확인 경로는 보통 아래와 같습니다.
-
-- 예: `/api/bo/management/health/readiness`
+[확인 경로 예시]
+- 예: `/health/readiness`
 - 별도 readiness endpoint가 없다면 기본 health 경로 사용
 
 ### 진행 과정
@@ -137,7 +136,7 @@ Kubernetes는 이를 자동으로 재시작하여 복구를 시도할 수 있습
 
 확인 경로는 보통 아래와 같습니다.
 
-- 예: `/api/bo/management/health/liveness`
+- 예: `/health/liveness`
 - 별도 liveness endpoint가 없다면 기본 health 경로 사용
 
 ### 진행 과정
@@ -184,7 +183,7 @@ spec:
 
           startupProbe:
             httpGet:
-              path: /api/bo/management/health
+              path: /health
               port: 8080
             initialDelaySeconds: 60
             periodSeconds: 60
@@ -193,7 +192,7 @@ spec:
 
           readinessProbe:
             httpGet:
-              path: /api/bo/management/health/readiness
+              path: /health/readiness
               port: 8080
             initialDelaySeconds: 60
             periodSeconds: 60
@@ -202,7 +201,7 @@ spec:
 
           livenessProbe:
             httpGet:
-              path: /api/bo/management/health/liveness
+              path: /health/liveness
               port: 8080
             initialDelaySeconds: 120
             periodSeconds: 120

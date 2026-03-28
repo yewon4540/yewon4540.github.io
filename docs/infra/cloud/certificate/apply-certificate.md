@@ -1,7 +1,7 @@
 ---
 title: AWS ALB+ACM을 사용하여 인증서 적용하기
 layout: default
-parent: ALB
+parent: 인증서
 grand_parent: Cloud
 nav_order: 1
 written_at: 2026-03-25
