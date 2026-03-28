@@ -1,7 +1,7 @@
 ---
 title: CloudFront를 이용한 도메인 라우팅 및 외부 SaaS 연동 구조 정리
 layout: default
-parent: CloudFront + Lambda@Edge
+parent: CloudFront
 grand_parent: Cloud
 nav_order: 2
 written_at: 2026-03-27

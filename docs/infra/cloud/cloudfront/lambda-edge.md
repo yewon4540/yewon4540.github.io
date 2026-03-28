@@ -1,7 +1,7 @@
 ---
 title: 도메인마다 포트가 다른 서버? CloudFront + Lambda@Edge로 해결하기
 layout: default
-parent: CloudFront + Lambda@Edge
+parent: CloudFront
 grand_parent: Cloud
 nav_order: 1
 written_at: 2026-03-25
