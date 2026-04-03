@@ -16,3 +16,11 @@ vendor/
 Gemfile.lock
 .DS_Store
 *.env
+
+# 초안 및 작업 임시 파일
+tmp/
+
+# 실수로 생성된 Git 폴더 차단
+.git2/
+.git 2/
+
