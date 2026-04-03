@@ -1,12 +1,16 @@
 name: CI
 
+# PR 전용 빌드 검증 (main push 배포는 pages.yml 이 담당)
+# 모든 PR 에서 항상 실행 → status check 누락으로 인한 머지 차단 없음
 on:
-  push:
-    branches: ["main"]
   pull_request:
 
+# 같은 PR 에 새 커밋이 쌓이면 이전 실행 취소
+concurrency:
+  group: ci-${{ github.head_ref }}
+  cancel-in-progress: true
+
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
@@ -15,8 +19,9 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1' # github-pages gem compatibility
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 0 # Increment this number if you need to re-download cached gems
-      - name: Build with Jekyll
-        run: bundle exec jekyll build
+          ruby-version: '3.1'
+          bundler-cache: true
+          cache-version: 0
+      - name: Build with Jekyll (strict)
+        # --strict: Liquid 오류·깨진 front matter를 빌드 실패로 처리
+        run: bundle exec jekyll build --strict_front_matter

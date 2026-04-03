@@ -9,8 +9,19 @@ name: Deploy Jekyll site to Pages
 on:
   push:
     branches: ["main"]
+    # 사이트 빌드 결과물에 영향을 주는 파일 변경 시에만 배포
+    # README, .gitignore, scripts 등 변경은 스킵
+    paths:
+      - 'docs/**'
+      - 'index.md'
+      - '_config.yml'
+      - '_layouts/**'
+      - 'admin/**'
+      - 'uploads/**'
+      - 'Gemfile'
+      - 'CNAME'
 
-  # Allows you to run this workflow manually from the Actions tab
+  # Actions 탭에서 수동 실행 가능 (path 필터 우회)
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages

@@ -3,12 +3,19 @@ updates:
   - package-ecosystem: bundler
     directory: /
     schedule:
-      interval: daily
+      interval: weekly
+      day: monday
     allow:
       - dependency-type: direct
+    labels:
+      - dependencies
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: daily
+      interval: weekly
+      day: monday
       time: "10:00"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 5
+    labels:
+      - dependencies
+      - github-actions
