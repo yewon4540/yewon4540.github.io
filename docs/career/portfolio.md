@@ -1,8 +1,7 @@
 ---
 title: 포트폴리오
 layout: default
-parent: portfolio
-grand_parent: 커리어&포트폴리오
+parent: 커리어&포트폴리오
 nav_order: 1
 written_at: 2026-04-27
 ---
