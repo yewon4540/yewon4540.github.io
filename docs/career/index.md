@@ -7,7 +7,6 @@ has_children: true
 ---
 
 # 커리어 & 포트폴리오
-작성즁......
 ## 소개 
 
 **박예원** · Cloud / DevOps Engineer
