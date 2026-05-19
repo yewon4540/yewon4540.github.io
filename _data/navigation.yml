@@ -1,0 +1,16 @@
+# Chirpy 사이드바/네비게이션 설정 예시
+# 기존 docs/ 구조를 반영해 추가 작성 가능
+- title: "Home"
+  url: /
+- title: "Docs"
+  url: /docs/
+- title: "DevOps"
+  url: /docs/devops/
+- title: "Infra"
+  url: /docs/infra/
+- title: "Kubernetes"
+  url: /docs/kubernetes/
+- title: "Monitoring"
+  url: /docs/monitoring/
+- title: "QA"
+  url: /docs/qa/
