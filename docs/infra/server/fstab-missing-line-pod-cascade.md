@@ -1,5 +1,5 @@
 ---
-title: fstab 한 줄이 빠져 있어서 다음 날 14개 파드가 전부 죽었다
+title: fstab 누락이 일으킨 K8s HostPath · 레지스트리 다층 장애 분석
 layout: default
 parent: Server
 grand_parent: 인프라
@@ -7,7 +7,7 @@ nav_order: 5
 written_at: 2026-05-19
 ---
 
-# fstab 한 줄이 빠져 있어서 다음 날 14개 파드가 전부 죽었다
+# fstab 누락이 일으킨 K8s HostPath · 레지스트리 다층 장애 분석
 
 폐쇄망 환경의 단일 노드 k3s 클러스터에서 노드가 한 번 재부팅됐고,
 다음 날 출근해서 클러스터 상태를 보다가 한 네임스페이스의 파드 14개가 전부 CrashLoopBackOff로 누워 있는 걸 봤습니다.

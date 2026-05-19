@@ -1,5 +1,5 @@
 ---
-title: Karpenter 컨트롤러를 지웠는데 노드 2개가 22일째 운영 트래픽을 받고 있었다
+title: Karpenter 잔재 NodeClaim · Node finalizer 정리 절차
 layout: default
 parent: k8s
 grand_parent: Kubernetes
@@ -7,7 +7,7 @@ nav_order: 5
 written_at: 2026-05-19
 ---
 
-# Karpenter 컨트롤러를 지웠는데 노드 2개가 22일째 운영 트래픽을 받고 있었다
+# Karpenter 잔재 NodeClaim · Node finalizer 정리 절차
 
 운영 중인 EKS 클러스터에서 Karpenter 사용을 정리하고 매니지드 노드 그룹으로 일원화했던 적이 있습니다.
 그렇게 마무리됐다고 생각하고 한참이 지난 어느 날, 노드 목록을 확인하다가
